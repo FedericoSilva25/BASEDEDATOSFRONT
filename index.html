@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cargar Jugador - PadelZone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Cargar nuevo jugador</h1>
+    <form id="jugadorForm">
+      <input type="text" name="nombre_completo" placeholder="Nombre completo" required />
+      <input type="date" name="fecha_de_nacimiento" required />
+      <input type="text" name="telefono" placeholder="Teléfono" />
+      <input type="text" name="direccion" placeholder="Dirección" />
+
+      <select name="categoria" required>
+        <option value="">Categoría</option>
+        <option value="1ra">1ra</option>
+        <option value="2da">2da</option>
+        <option value="3ra">3ra</option>
+        <option value="4ta">4ta</option>
+        <option value="5ta">5ta</option>
+        <option value="6ta">6ta</option>
+      </select>
+
+      <select name="estilo_de_juego">
+        <option value="">Estilo de juego</option>
+        <option value="Ofensivo">Ofensivo</option>
+        <option value="Defensivo">Defensivo</option>
+      </select>
+
+      <select name="mano_habil">
+        <option value="">Mano hábil</option>
+        <option value="Derecha">Derecha</option>
+        <option value="Zurda">Zurda</option>
+      </select>
+
+      <input type="text" name="pareja_habitual" placeholder="Pareja habitual" />
+      <input type="date" name="ultima_visita" placeholder="Última visita" />
+
+      <select name="frecuencia_semanal">
+        <option value="">Frecuencia semanal</option>
+        <option value="1 vez">1 vez</option>
+        <option value="2 veces">2 veces</option>
+        <option value="3 veces o más">3 veces o más</option>
+      </select>
+
+      <select name="cliente_frecuente">
+        <option value="">¿Cliente frecuente?</option>
+        <option value="Sí">Sí</option>
+        <option value="No">No</option>
+      </select>
+
+      <textarea name="notas" placeholder="Notas"></textarea>
+      <input type="text" name="etiquetas" placeholder="Etiquetas (separadas por coma)" />
+
+      <button type="submit">✅ Guardar jugador</button>
+      <p id="mensaje"></p>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
