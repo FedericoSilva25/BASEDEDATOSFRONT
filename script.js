@@ -4,7 +4,7 @@ document.getElementById("jugadorForm").addEventListener("submit", function (e) {
   const form = e.target;
   const data = Object.fromEntries(new FormData(form).entries());
 
-  fetch("https://proxycargadatos.onrender.com", {
+  fetch("https://proxycargadatos.onrender.com/guardar", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(data)
